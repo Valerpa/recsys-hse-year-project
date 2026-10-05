@@ -1,0 +1,91 @@
+# ==============================================================================
+# DATA & REPLICABILITY (The most critical part for data science)
+# ==============================================================================
+# Never commit your raw datasets or heavy computed models
+data/
+*.csv
+*.xlsx
+*.json
+*.sqlite
+*.db
+
+# Model checkpoints, weights, and large binaries (Pickle, Joblib, PyTorch, TF)
+*.pkl
+*.joblib
+*.h5
+*.pth
+*.pt
+*.onnx
+
+# ==============================================================================
+# SECRETS & CONFIGURATION
+# ==============================================================================
+# Contains private API keys, database passwords, and local settings
+.env
+.env.*
+!*.example
+secrets.py
+config.local.py
+
+# ==============================================================================
+# JUPYTER NOTEBOOKS & IDEs
+# ==============================================================================
+# Notebook checkpoints and cache
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.virtual_documents/
+
+# VS Code, PyCharm, and local editor settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# ==============================================================================
+# PYTHON INTERNAL CACHE & BUILDS
+# ==============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==============================================================================
+# VIRTUAL ENVIRONMENTS
+# ==============================================================================
+# Exclude your local environment files
+.venv/
+venv/
+env/
+ENV/
+.conda/
+conda-env/
+
+# ==============================================================================
+# LOGS & DIAGNOSTICS
+# ==============================================================================
+# Log files generated during script runs or model training
+*.log
+logs/
+.tensorboard/
